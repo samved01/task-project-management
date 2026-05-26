@@ -2,6 +2,8 @@
 
 A full-stack Task & Project Management Web Application built using the PERN Stack (PostgreSQL, Express.js, React, Node.js). This application allows users to register, log in, manage projects, and create tasks within those projects, along with a dashboard overview.
 
+**🚀 Live Demo (Vercel):** [https://task-project-management.vercel.app](https://task-project-management.vercel.app)
+
 ## Features
 
 - **Authentication**: User Registration and Login with JWT.
