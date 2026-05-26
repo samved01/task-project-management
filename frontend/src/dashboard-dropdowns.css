@@ -1,0 +1,82 @@
+/* Dashboard Dropdown Styles */
+.stat-card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.click-hint {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--accent-primary);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.stat-card:hover .click-hint {
+    opacity: 1;
+}
+
+.dashboard-dropdown {
+    margin-top: 0.5rem;
+    background-color: var(--bg-card-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--shadow-md);
+    max-height: 200px;
+    overflow-y: auto;
+    animation: fadeInDown 0.2s ease-out forwards;
+}
+
+.dashboard-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-dropdown li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-badge {
+    font-size: 0.7rem;
+    background-color: var(--bg-main);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: var(--text-primary);
+}
+
+/* Scrollbar for dropdown */
+.dashboard-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+.dashboard-dropdown::-webkit-scrollbar-track {
+    background: transparent;
+}
+.dashboard-dropdown::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 10px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
